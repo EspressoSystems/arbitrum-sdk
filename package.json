@@ -53,7 +53,7 @@
     "ethers": "^5.1.0"
   },
   "devDependencies": {
-    "@arbitrum/nitro-contracts": "^1.1.1",
+    "@arbitrum/nitro-contracts": "https://github.com/EspressoSystems/nitro-contracts/releases/download/v1.4.0-pre/espressosystems-nitro-contracts-v1.4.0.tgz",
     "@arbitrum/token-bridge-contracts": "^1.2.1",
     "@nomiclabs/hardhat-ethers": "^2.0.4",
     "@offchainlabs/l1-l3-teleport-contracts": "1.0.1",
