@@ -1,5 +1,5 @@
 {
-  "name": "@arbitrum/sdk",
+  "name": "@espressosystems/arbitrum-sdk",
   "version": "4.0.1",
   "description": "Typescript library client-side interactions with Arbitrum",
   "author": "Offchain Labs, Inc.",
@@ -8,7 +8,7 @@
   "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/offchainlabs/arbitrum-sdk.git"
+    "url": "git+https://github.com/espressosystems/arbitrum-sdk.git"
   },
   "engines": {
     "node": ">=v11",
