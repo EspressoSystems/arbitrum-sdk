@@ -224,15 +224,15 @@ export class InboxTools {
     const [maxTimeVariation, currentBlockNumber, currentBlockTimestamp] =
       await multicall.multiCall(multicallInput, true)
 
+    const [delayBlocks, _futureBlocks, delaySeconds, _futureSeconds] =
+      maxTimeVariation
     const blockNumber = isParentChainArbitrum
       ? currentL1BlockNumber!
       : currentBlockNumber.toNumber()
 
-    const firstEligibleBlockNumber =
-      blockNumber - maxTimeVariation.delayBlocks.toNumber()
+    const firstEligibleBlockNumber = blockNumber - delayBlocks.toNumber()
     const firstEligibleTimestamp =
-      currentBlockTimestamp.toNumber() -
-      maxTimeVariation.delaySeconds.toNumber()
+      currentBlockTimestamp.toNumber() - delaySeconds.toNumber()
 
     const firstEligibleBlock = await this.findFirstBlockBelow(
       firstEligibleBlockNumber,

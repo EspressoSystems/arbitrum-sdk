@@ -27,7 +27,7 @@
   optionalDependencies:
     sol2uml "2.2.0"
 
-"@arbitrum/nitro-contracts@1.1.1", "@arbitrum/nitro-contracts@^1.1.1":
+"@arbitrum/nitro-contracts@1.1.1":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@arbitrum/nitro-contracts/-/nitro-contracts-1.1.1.tgz#2d8a2f9ab757bb7654562aebe435bff833c4b98d"
   integrity sha512-4Tyk3XVHz+bm8UujUC78LYSw3xAxyYvBCxfEX4z3qE4/ww7Qck/rmce5gbHMzQjArEAzAP2YSfYIFuIFuRXtfg==
@@ -36,6 +36,16 @@
     "@openzeppelin/contracts" "4.5.0"
     "@openzeppelin/contracts-upgradeable" "4.5.2"
     patch-package "^6.4.7"
+
+"@arbitrum/nitro-contracts@https://github.com/EspressoSystems/nitro-contracts/releases/download/v1.4.0-pre/espressosystems-nitro-contracts-v1.4.0.tgz":
+  version "1.4.0"
+  resolved "https://github.com/EspressoSystems/nitro-contracts/releases/download/v1.4.0-pre/espressosystems-nitro-contracts-v1.4.0.tgz#a3d5dbe908c70312720de114708e487deea33ce1"
+  dependencies:
+    "@offchainlabs/upgrade-executor" "1.1.0-beta.0"
+    "@openzeppelin/contracts" "4.5.0"
+    "@openzeppelin/contracts-upgradeable" "4.5.2"
+    patch-package "^6.4.7"
+    solady "0.0.182"
 
 "@arbitrum/token-bridge-contracts@1.2.0":
   version "1.2.0"
@@ -5414,6 +5424,11 @@ sol2uml@2.2.0:
     ethers "^5.6.9"
     js-graph-algorithms "^1.0.18"
     klaw "^4.0.1"
+
+solady@0.0.182:
+  version "0.0.182"
+  resolved "https://registry.yarnpkg.com/solady/-/solady-0.0.182.tgz#bd8c47f128a3a752358ad052782773966d74c400"
+  integrity sha512-FW6xo1akJoYpkXMzu58/56FcNU3HYYNamEbnFO3iSibXk0nSHo0DV2Gu/zI3FPg3So5CCX6IYli1TT1IWATnvg==
 
 solc@0.7.3:
   version "0.7.3"
